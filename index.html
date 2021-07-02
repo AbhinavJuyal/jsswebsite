@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./preset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/67571fc127.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>JSS Academy of Techincal Education</title>
+  </head>
+  <body>
+    <nav>
+      <i class="fas fa-bars fa-2x"></i>
+      <ul class="alt-nav translate">
+        <li class="list">
+          <div class="list__head">
+            <a href="#">HOME</i></a>
+          </div>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <span>ABOUT</span>  <i class="fas fa-chevron-down fa-sm"></i> <i class="fas fa-chevron-right"></i>
+          </div>
+          <ul class="list__options hidden">
+            <li>THE INSTITUTE</li>
+            <li>VISION & MISSION</li>
+            <li>MANDATORY DISCLOSURE</li>
+            <li>GOVERNING COUNCIL</li>
+            <li>ANTI RAGGING GUIDELINES</li>
+            <li>STAFF DIRECTORY</li>
+            <li>INSTITUE IMPORTTANT FUNCTIONARIES</li>
+            <li>AWARDS</li>
+            <li>ACCREDITATION</li>
+          </ul>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <span>CAMPUS FACILITIES</span>  <i class="fas fa-chevron-down fa-sm"></i> <i class="fas fa-chevron-right"></i>
+          </div>
+          <ul class="list__options hidden">
+            <li>SCHOLARSHIP</li>
+            <li>LIBRARY</li>
+            <li>COMPUTER CENTRE</li>
+            <li>MUTLIPURPOSE HALL</li>
+            <li>SPORTS</li>
+            <li>HOSTEL FACILITIES</li>
+            <li>MEDICAL FACILITIES</li>
+          </ul>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <span>ACADEMICS</span>  <i class="fas fa-chevron-down fa-sm"></i> <i class="fas fa-chevron-right"></i>
+          </div>
+          <ul class="list__options hidden">
+            <li>DEPARTMENTS</li>
+            <li>ACHIEVEMENTS</li>
+            <li>FACULTY</li>
+            <li>ACADEMIC CALENDAR</li>
+            <li>GRIEVANCE</li>
+            <li>DEAN STUDENT WELFARE</li>
+            <li>DEAN ACADEMICS</li>
+          </ul>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <span>TRAINING & PLACEMENTS</span>  <i class="fas fa-chevron-down fa-sm"></i> <i class="fas fa-chevron-right"></i>
+          </div>
+          <ul class="list__options hidden">
+            <li>OVERVIEW</li>
+            <li>TPO MESSAGE</li>
+            <li>RECRUITERS</li>
+            <li>POLICY</li>
+            <li>PLACED STATISTICS</li>
+            <li>TOP PLACEMENTS</li>
+          </ul>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <span>RESEARCH & DEVELOPMENT</span>  <i class="fas fa-chevron-down fa-sm"></i> <i class="fas fa-chevron-right"></i>
+          </div>
+          <ul class="list__options hidden">
+            <li>DEAN RESEARCH</li>
+            <li>FACULTY DEVELOPMENT PROGRAMME</li>
+            <li>PUBLICATION</li>
+            <li>RESEARCH PROJECTS</li>
+            <li>PATENTS</li>
+            <li>CHAPTER/MONOGRAM</li>
+            <li>WORKSHOPS/SEMINAR</li>
+            <li>STUDENT PROJECTS</li>
+            <li>STUDENT PROJECTS VIDEOS</li>
+          </ul>
+        </li>
+        <li class="list">
+          <div class="list__head">
+            <a href="#">COLLEGE OF PHARMACY</a>
+          </div>
+        </li>
+        <button type="button" id="backBtn">Back</button>
+      </ul>
+      <div class="btn-wrapper">
+        <button type="button">
+          <a href="./login/index.html" id="lPageLink">LOG IN</a>
+        </button>
+        <div id="logout__options" class="hidden">
+          <div id="userName"></div>
+          <button onclick="logout()">LOG OUT</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="l-sec">
+        <div class="title">
+          <img src="./img/jsslogo.png" alt="" />
+          <div class="name">
+            JSS <br />
+            ACADEMY OF <br />
+            TECHINCAL EDUCATION
+          </div>
+        </div>
+        <div class="imp-links"></div>
+      </div>
+      <ul class="nav-sec">
+        <li>NIRF DATA</li>
+        <li><a href="#">LIBRARY</a></li>
+        <li><a href="#">IIC</a></li>
+        <li><a href="#">AWARDS & HONORS</a></li>
+        <li><a href="#">STEP</a></li>
+        <li><a href="#">DASHBOARD</a></li>
+        <li><a href="#">COLLEGE BROCHURE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li>INFOCONNECT</li>
+      </ul>
+      <div class="desc-cover">
+        <div class="focus sec">
+          <div class="part part1">
+            <p>Vision</p>
+            <div class="font-middle">
+              JSS Academy of Technical Education Noida aims to become an
+              Institution of excellence in imparting quality Outcome Based
+              Education that empowers the young generation with Knowledge,
+              Skills, Research, Aptitude and Ethical values to solve
+              Contemporary Challenging Problems.
+            </div>
+          </div>
+          <div class="part part2">
+            <p>Mission</p>
+            <ul class="font-middle">
+              <li>
+                Develop a platform for achieving globally acceptable level of
+                intellectual acumen and technological competence.
+              </li>
+              <li>
+                Create an inspiring ambience that raises the motivation level
+                for conducting quality research
+              </li>
+              <li>
+                Provide an environment for acquiring ethical values and positive
+                attitude
+              </li>
+            </ul>
+          </div>
+          <div class="part part3">
+            <p>Entrepreneurship Focus</p>
+            <div class="font-middle">
+              JSS Business Incubator is India’s first Technology Based Incubator
+              (TBI), started in 2000 with support from National Science &
+              Technology Entrepreneurship Development Board (NSTEDB) &
+              Department of Science & Technology (DST), Government of India. We
+              have graduated over 100 start-ups and currently incubating over
+              30. In case...
+            </div>
+            <a href="#" class="lmore">
+              <span>Learn more</span>
+              <img src="./img/arrow-right-solid.svg" alt="" width="14px" />
+            </a>
+          </div>
+        </div>
+        <!-- JSS ACADEMY OF TECHINCAL EDUCATION, NOIDA -->
+        <div class="jssaten sec">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>JSS Academy of Technical Education, Noida</p>
+          </div>
+          <div class="desc1 flow-pic-left">
+            <img src="./img/desc1-img.png" alt="" />
+            <div class="space-bar"></div>
+            <div class="desc-para">
+              <p class="font-black">
+                JSS Academy of Technical Education Noida (JSSATEN) is one of the
+                leading Technical Institutions in the National Capital Region in
+                the State of Uttar Pradesh.
+              </p>
+              <br />
+              <p class="font-middle">
+                Established in the year 1998 by JSS Mahavidyapeetha, Noida, the
+                Institution has set bench marks every year, and grown into an
+                Institution of Excellence in Technical Education.
+                <br />
+                <br />
+                Today, JSSATEN has total student strength of over 4000, who are
+                mentored by more than 250 Faculty Members. The Campus has finest
+                accommodation for girls and boys.
+                <br />
+                <br />
+                The Institution has MOUs with Colorado Heights University,
+                Denver, USA for student exchange program. IBM Centre of
+                Excellence, Nokia Mobile Innovation Labs, PLMCC and Schneider
+                Electric Substation Automation Labs are additional facilities
+                for the students to innovate new ideas. JSS Academy has Doctoral
+                Programs in Computer Science & Engineering, Mechanical
+                Engineering, Electronics & Communication Engineering and
+                Physical Sciences under UP Technical University.
+              </p>
+              <br />
+              <p class="font-middle">
+                College aims to become an Institution of excellence in imparting
+                quality Outcome Based Education that empowers the young
+                generation with Knowledge, Skills, Research, Aptitude and
+                Ethical values to solve Contemporary Challenging Problems
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- PRINICIPAL'S DESK -->
+        <div class="principal-desk sec">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>Principal's Desk</p>
+          </div>
+          <div class="desc1 flow-pic-right">
+            <img src="./img/principal.png" alt="" />
+            <div class="space-bar"></div>
+            <div class="desc-para">
+              <p class="font-black">
+                Being recognised as one of the best Technical Institutions, JSS
+                Academy of Technical Education, Noida (JSSATEN) is adopting
+                cautiously to the changing demands of technical manpower at
+                global level.
+              </p>
+              <br />
+              <p class="font-middle">
+                The Academy envisions to become an Institution of Excellence in
+                imparting quality Outcome Based Education that empowers young
+                generation with knowledge, skills, research aptitude, ethics and
+                moral values.
+                <br />
+                <br />
+                The Institutions has been making efforts to strictly implement
+                OBE by preparing the faculty members to a system, where they
+                measure the progress and competencies of the student as they go
+                through a course in each Semester.
+              </p>
+              <br />
+              <br />
+              <p class="font-family-noto highlight sign">
+                Dr. Gurulingappa M Patil
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWARDS AND HONORS -->
+        <div class="awards-sec sec">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>Awards & Honors</p>
+          </div>
+          <div class="awards">
+            <div class="award award1">
+              <img src="./img/innovation.png" alt="" />
+              <p class="awd-title">Institution Innovation Council</p>
+              <p class="font-middle">
+                JSS Academy of Technical Education, Noida achieved 4.5 Star
+                rating by Ministry of Education (MoE) Innovation Cell.
+              </p>
+            </div>
+            <div class="award award2">
+              <img src="./img/clean.png" alt="" />
+              <p class="awd-title">Clean Campus Award</p>
+              <p class="font-middle">
+                JSS Academy of Technical Education, Noida won Clean Campus
+                Award.
+              </p>
+            </div>
+            <div class="award award3">
+              <img src="./img/nirf.png" alt="" />
+              <p class="awd-title">NIRF Rankings</p>
+              <p class="font-middle">
+                JSS Academy of Technical Education Noida Excels in the NIRF
+                Rankings 2020.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NBA -->
+        <div class="nba sec second-bg">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>National Board of Accreditation</p>
+          </div>
+          <div class="desc1 flow-pic-left">
+            <img src="./img/nba.png" alt="" />
+            <div class="space-bar"></div>
+            <div class="desc-para font-middle">
+              The National Board of Accreditation (NBA), India was initially
+              established by the AICTE (All India Council of Technical
+              Education) under section 10(u) of AICTE Act, in the year 1994, in
+              order to assess the qualitative competence of the programs offered
+              by educational institution from diploma level to post-graduate
+              level in engineering and technology, management, pharmacy,
+              architecture and related disciplines, which are approved by AICTE.
+              <br />
+              <br />
+              <br />
+              NBA Accreditation is granted to JSSATE Noida for the following
+              courses for a period of 3 years for Academic Years 2020-2021 to
+              2022-2023 i.e. upto 30-06-2023.
+            </div>
+          </div>
+        </div>
+
+        <!-- CULTURE OF JSSATEN -->
+        <div class="culture sec second-bg">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>Culture of JSSATEN</p>
+          </div>
+          <div class="society-logos">
+            <img src="./img/ncs.svg" alt="" />
+            <img src="./img/illuminati.png" alt="" />
+            <img src="./img/dsc.svg" alt="" />
+            <img src="./img/verve.png" alt="" />
+            <img src="./img/edc.png" alt="" />
+          </div>
+          <p class="font-black">AND MANY MORE !!</p>
+        </div>
+
+        <!-- OUR ACADEMICS -->
+        <div class="acd-sec sec">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>Our Academics</p>
+          </div>
+          <div class="acds">
+            <div class="acd acd1">
+              <div class="info-cover">
+                <img src="./img/stdproject.jpg" alt="" />
+                <p class="acd-title">JSSATE Student Projects</p>
+                <p class="font-middle">
+                  Projects made by students showcased, in different events in
+                  the college.
+                </p>
+              </div>
+
+              <a href="#" class="lmore">
+                <span>Read more</span>
+                <img src="./img/arrow-right-solid.svg" alt="" width="14px" />
+              </a>
+            </div>
+            <div class="acd acd2">
+              <div class="info-cover">
+                <img src="./img/dept.jpeg" alt="" />
+                <p class="acd-title">Departments</p>
+                <p class="font-middle">
+                  Different departments in JSS, staff members and more.
+                </p>
+              </div>
+              <a href="#" class="lmore">
+                <span>Read more</span>
+                <img src="./img/arrow-right-solid.svg" alt="" width="14px" />
+              </a>
+            </div>
+            <div class="acd acd3">
+              <div class="info-cover">
+                <img src="./img/mou.jpeg" alt="" />
+                <p class="acd-title">MOUs</p>
+                <p class="font-middle">
+                  Memorandum of Understanding college abides by.
+                </p>
+              </div>
+              <a href="#" class="lmore">
+                <span>Read more</span>
+                <img src="./img/arrow-right-solid.svg" alt="" width="14px" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECRUITERS -->
+        <div class="recruit sec second-bg">
+          <div class="sec-title">
+            <span class="underline"></span>
+            <p>Our Recruiters</p>
+          </div>
+          <div class="company-logos">
+            <img src="./img/bosch.png" alt="" />
+            <img src="./img/fiserv.png" alt="" />
+            <img src="./img/genpact.png" alt="" />
+            <img src="./img/ibm.png" alt="" />
+            <img src="./img/niit.png" alt="" />
+            <img src="./img/paytm.png" alt="" />
+            <img src="./img/samsung.png" alt="" />
+          </div>
+          <a href="#" class="lmore">
+            <span>See more..</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="upper">
+        <div class="imp-links">
+          <p class="foot-title">Important Links</p>
+          <ul>
+            <li><a href="#">Dr. A.P.J. AKTU, Lucknow</a></li>
+            <li><a href="#">Info-Connect</a></li>
+            <li><a href="#">On-Campus</a></li>
+            <li><a href="#">Off-Campus</a></li>
+            <li><a href="#">Grievance</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">IIC</a></li>
+            <li><a href="#">Computer Centre</a></li>
+            <li><a href="#">Alumni Survey</a></li>
+            <li><a href="#">PMKVY</a></li>
+          </ul>
+        </div>
+        <div class="people">
+          <p class="foot-title">People</p>
+          <ul>
+            <li><a href="#">Alumni Survey</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Women Cell</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="f-logo">
+          <img src="./img/jsslogo.png" alt="" />
+          <div>
+            <p class="f-name">JSS Academy of Technical Education</p>
+            <p class="addr">
+              C-20/1, Sector-62, NOIDA, DISTT.U.P., INDIA-201301
+            </p>
+          </div>
+        </div>
+        <div class="cred">
+          <div class="phnum">
+            <i class="fas fa-phone"></i>
+            <p>0120-2400104, 2400115</p>
+          </div>
+          <div class="email">
+            <i class="fas fa-envelope-square"></i>
+            <p>principal@jssaten.ac.in</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="font-middle">
+          Site Map | &copy; JSSATEN - All right reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- firebase scripts  -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyA2tceCPF0a2J5Zx1q6x4N-aMGU3bQ8elY",
+        authDomain: "web-assignment-549e1.firebaseapp.com",
+        projectId: "web-assignment-549e1",
+        storageBucket: "web-assignment-549e1.appspot.com",
+        messagingSenderId: "90807040885",
+        appId: "1:90807040885:web:72c959da2798b9bcccb13c",
+        measurementId: "G-LRX081M1YJ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // firebase.analytics();
+    </script>
+
+    <!-- my-script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

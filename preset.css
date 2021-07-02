@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+}
+
+input, button, textarea, select {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+}
+
+input, textarea, button {
+    border: 1px solid gray;
+    outline: none; 
+}
+
+embed, iframe, img, object, video {
+    display: block;
+    max-width: 100%;
+}
+

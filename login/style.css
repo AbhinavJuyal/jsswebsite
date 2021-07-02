@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #148595;
+  --secondary-color: #f4feff;
+  --third-color: #148595;
+  --black: #4e4e4e;
+  --title-size: 32px;
+  --padding: 100px;
+}
+
+.form-hidden {
+  display: none !important;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 100px;
+  background-color: #f8f8f8;
+}
+
+main {
+  position: relative;
+  /* min-width: 100vh; */
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.jsslogo {
+  width: 200px;
+  margin: 40px;
+  align-self: center;
+}
+
+.divider {
+  min-height: 100%;
+  padding: 2px;
+  background-color: black;
+  border-radius: 999px;
+}
+
+.form-wrapper {
+  margin: 20px;
+  margin-left: 60px;
+}
+
+#l-head {
+  color: black;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.input__cover {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  border: none;  
+  outline: none;
+  background-color: rgba(255,255,255,0.8);
+  width: 430px;
+  height: 40px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+input:active, input:focus {
+  border-bottom: 2px solid black;  
+}
+
+input::placeholder {
+  font-family: inherit;
+}
+
+button {
+  color: blue;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 99px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.login {
+  margin-bottom: 40px;
+}
+
+.h-link {
+  /* margin:  0 auto; */
+  margin-right: auto;
+  margin-top: 5px;
+} 
+
+
+.prev__page {
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+
+.err {
+	display: block;
+	position: absolute;
+	top: 0;
+	transform: translate(0,-50%);
+	background: white;
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+	border: 2px solid #ff0000;
+	border-radius: 10px;
+	padding: 16px 40px;
+}
+
+
+@media (max-width: 870px) {
+  .jsslogo, .divider {
+    display: none;
+  }
+  .form-wrapper {
+    margin: 0;
+  }
+}

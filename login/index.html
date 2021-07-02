@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../preset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="err form-hidden"></div>
+      <div class="cover">
+        <div class="jsslogo">
+          <img src="../img/jsslogo.png" alt="" />
+        </div>
+        <div class="divider"></div>
+        <div class="form-wrapper">
+          <!-- login form -->
+          <h1 id="l-head">Log In</h1>
+          <form action="" class="form" id="loginForm">
+            <div class="input__cover">
+              <input
+                id="lg-email"
+                type="email"
+                placeholder="Email"
+                autocomplete="off"
+                autofocus="on"
+                autocapitalize="none"
+                spellcheck="false"
+                required
+              />
+              <input
+                id="lg-pass"
+                type="password"
+                placeholder="Password"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                required
+                minlength="6"
+              />
+              <button type="submit" class="btn" id="loginBtn">Log In</button>
+            </div>
+            <div class="h-link">
+              Don't have an account?
+              <button type="button" id="rLink">Register</button>
+            </div>
+          </form>
+          <!-- registration form -->
+          <form action="" class="form form-hidden" id="regisForm">
+            <div class="input__cover">
+              <input
+                id="rg-email"
+                type="email"
+                placeholder="Email"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                required
+              />
+              <input
+                id="rg-pass"
+                type="password"
+                placeholder="Password"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                required
+                minlength="6"
+              />
+              <button type="submit" class="btn" id="regisBtn">Register</button>
+            </div>
+            <div class="h-link">
+              Already have an account?
+              <button type="button" id="lLink">Log In</button>
+            </div>
+          </form>
+          <a href="../index.html" class="prev__page">Back to Homepage</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- firebase scripts  -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyA2tceCPF0a2J5Zx1q6x4N-aMGU3bQ8elY",
+        authDomain: "web-assignment-549e1.firebaseapp.com",
+        projectId: "web-assignment-549e1",
+        storageBucket: "web-assignment-549e1.appspot.com",
+        messagingSenderId: "90807040885",
+        appId: "1:90807040885:web:72c959da2798b9bcccb13c",
+        measurementId: "G-LRX081M1YJ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // firebase.analytics();
+    </script>
+
+    <!-- my-script -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
